@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({title, subtitle, bgColor}) => {
+const Task = ({title, subtitle, bgColor}) => {
     
   return (
     <div className='w-[45%] flex flex-col px-4 py-6 rounded-xl' style={{background: `${bgColor}`}}>
@@ -10,4 +10,4 @@ const Card = ({title, subtitle, bgColor}) => {
   )
 }
 
-export default Card
+export default Task

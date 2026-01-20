@@ -9,3 +9,7 @@ body{
 .scrollHide::-webkit-scrollbar{
     display: none;
 }
+
+#taskList::-webkit-scrollbar{
+    display: none;
+}

@@ -9,39 +9,40 @@ const App = () => {
   const [user, setUser] = useState(null)
   const authData = useContext(AuthContext)
   const [loggedInUserData, setLoggedInUserData] = useState(null) 
-  // useEffect(() => {
-  //   const loggedInUser = localStorage.getItem('loggedInUser')
-  //   if(authData){
-  //     setUser(loggedInUser.role)
-  //   }
-  // },[authData])
-
+  
+  useEffect(() => {
+    const userLoginIn = JSON.parse(localStorage.getItem('loggedInUser'))
+    if(userLoginIn){
+      setUser(userLoginIn.role)
+      setLoggedInUserData(userLoginIn.data || null)
+    }
+  }, [])
 
   const handleLogin = (email, password) => {
-    if(authData && authData.admin.email == email && authData.admin.password == password){
+    if(authData.userData && authData.userData.admin.email == email && authData.userData.admin.password == password){
       localStorage.setItem('loggedInUser', JSON.stringify({role : 'admin'}))
       setUser('admin')
     }
-    else if (authData){
+    else if (authData.employees){
       const employee = authData.employees.find((e) => e.email == email && e.password == password)
       if(employee){
         setUser('employee')
         setLoggedInUserData(employee)
-        localStorage.setItem('loggedInUser', JSON.stringify({role: 'employee'}))
+        localStorage.setItem('loggedInUser', JSON.stringify({role: 'employee', data:employee}))
       }
-    }
-    else{
+      else{
       alert('Invalid credentails!')
+      }
     }
 
   }
-
-
-
+  console.log(loggedInUserData)
   return (
     <>
-      {!user ? <Login handleLogin={handleLogin} /> : ''}
-      {user ==   'admin' ? <AdminDashboard/> :  user == 'employee' ? <EmpDashboard data={loggedInUserData}/> : ''}
+      {!user && <Login handleLogin={handleLogin} />}
+       {user === "admin" && <AdminDashboard changeUser={setUser}/>}
+
+      {user === "employee" && <EmpDashboard data={loggedInUserData}  changeUser={setUser}/>}
     </>
   )
 }

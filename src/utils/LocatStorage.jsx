@@ -8,40 +8,40 @@ const users = {
             taskNumbers: {
             active: 1,
             completed: 1,
-            failed: 1,
+            failed: 0,
             new: 1,
             accepted: 0
             },
             tasks: [
             {
                 active: true,
-                "new task": true,
-                "completed task": false,
-                "failed task": false,
-                "task title": "Design Login Page",
-                "task description": "Create responsive login UI using Tailwind.",
-                "task date": "2026-01-10",
-                "task category": "Design"
+                "newTask": true,
+                "completedTask": false,
+                "failedTask": false,
+                "taskTitle": "Design Login Page",
+                "taskDescription": "Create responsive login UI using Tailwind.",
+                "taskDate": "2026-01-10",
+                "taskCategory": "Design"
             },
             {
                 active: false,
-                "new task": false,
-                "completed task": true,
-                "failed task": false,
-                "task title": "Fix Button Styles",
-                "task description": "Correct hover and active button states.",
-                "task date": "2026-01-08",
-                "task category": "UI"
+                "newTask": false,
+                "completedTask": true,
+                "failedTask": false,
+                "taskTitle": "Fix Button Styles",
+                "taskDescription": "Correct hover and active button states.",
+                "taskDate": "2026-01-08",
+                "taskCategory": "UI"
             },
             {
                 active: false,
-                "new task": false,
-                "completed task": false,
-                "failed task": true,
-                "task title": "Deploy Preview",
-                "task description": "Deploy preview build on test server.",
-                "task date": "2026-01-05",
-                "task category": "Deployment"
+                "newTask": false,
+                "completedTask": false,
+                "failedTask": true,
+                "taskTitle": "Deploy Preview",
+                "taskDescription": "Deploy preview build on test server.",
+                "taskDate": "2026-01-05",
+                "taskCategory": "Deployment"
             }
             ]
         },
@@ -61,43 +61,43 @@ const users = {
             tasks: [
             {
                 active: true,
-                "new task": true,
-                "completed task": false,
-                "failed task": false,
-                "task title": "Build Task Card",
-                "task description": "Create reusable task card component.",
-                "task date": "2026-01-11",
-                "task category": "Frontend"
+                "newTask": true,
+                "completedTask": false,
+                "failedTask": false,
+                "taskTitle": "Build Task Card",
+                "taskDescription": "Create reusable task card component.",
+                "taskDate": "2026-01-11",
+                "taskCategory": "Frontend"
             },
             {
                 active: false,
-                "new task": false,
-                "completed task": true,
-                "failed task": false,
-                "task title": "Refactor CSS",
-                "task description": "Clean up unused Tailwind classes.",
-                "task date": "2026-01-07",
-                "task category": "Refactor"
+                "newTask": false,
+                "completedTask": true,
+                "failedTask": false,
+                "taskTitle": "Refactor CSS",
+                "taskDescription": "Clean up unused Tailwind classes.",
+                "taskDate": "2026-01-07",
+                "taskCategory": "Refactor"
             },
             {
                 active: false,
-                "new task": false,
-                "completed task": false,
-                "failed task": true,
-                "task title": "API Error Handling",
-                "task description": "Handle failed API responses properly.",
-                "task date": "2026-01-04",
-                "task category": "Backend"
+                "newTask": false,
+                "completedTask": false,
+                "failedTask": true,
+                "taskTitle": "API Error Handling",
+                "taskDescription": "Handle failed API responses properly.",
+                "taskDate": "2026-01-04",
+                "taskCategory": "Backend"
             },
             {
                 active: true,
-                "new task": false,
-                "completed task": false,
-                "failed task": false,
-                "task title": "Pagination Logic",
-                "task description": "Implement pagination for task list.",
-                "task date": "2026-01-12",
-                "task category": "Logic"
+                "newTask": false,
+                "completedTask": false,
+                "failedTask": false,
+                "taskTitle": "Pagination Logic",
+                "taskDescription": "Implement pagination for task list.",
+                "taskDate": "2026-01-12",
+                "taskCategory": "Logic"
             }
             ]
         },
@@ -110,60 +110,60 @@ const users = {
             taskNumbers: {
             active: 2,
             completed: 2,
-            failed: 1,
+            failed: 0,
             new: 1,
             accepted: 0
             },
             tasks: [
             {
                 active: true,
-                "new task": true,
-                "completed task": false,
-                "failed task": false,
-                "task title": "Write User Guide",
-                "task description": "Prepare documentation for employees.",
-                "task date": "2026-01-12",
-                "task category": "Documentation"
+                "newTask": true,
+                "completedTask": false,
+                "failedTask": false,
+                "taskTitle": "Write User Guide",
+                "taskDescription": "Prepare documentation for employees.",
+                "taskDate": "2026-01-12",
+                "taskCategory": "Documentation"
             },
             {
                 active: false,
-                "new task": false,
-                "completed task": true,
-                "failed task": false,
-                "task title": "Unit Testing",
-                "task description": "Test core components.",
-                "task date": "2026-01-09",
-                "task category": "Testing"
+                "newTask": false,
+                "completedTask": true,
+                "failedTask": false,
+                "taskTitle": "Unit Testing",
+                "taskDescription": "Test core components.",
+                "taskDate": "2026-01-09",
+                "taskCategory": "Testing"
             },
             {
                 active: false,
-                "new task": false,
-                "completed task": false,
-                "failed task": true,
-                "task title": "Server Config",
-                "task description": "Fix environment variables.",
-                "task date": "2026-01-03",
-                "task category": "DevOps"
+                "newTask": false,
+                "completedTask": false,
+                "failedTask": true,
+                "taskTitle": "Server Config",
+                "taskDescription": "Fix environment variables.",
+                "taskDate": "2026-01-03",
+                "taskCategory": "DevOps"
             },
             {
                 active: true,
-                "new task": false,
-                "completed task": false,
-                "failed task": false,
-                "task title": "Error Messages",
-                "task description": "Improve validation error messages.",
-                "task date": "2026-01-13",
-                "task category": "UX"
+                "newTask": false,
+                "completedTask": false,
+                "failedTask": false,
+                "taskTitle": "Error Messages",
+                "taskDescription": "Improve validation error messages.",
+                "taskDate": "2026-01-13",
+                "taskCategory": "UX"
             },
             {
                 active: false,
-                "new task": false,
-                "completed task": true,
-                "failed task": false,
-                "task title": "Code Review",
-                "task description": "Review teammate pull requests.",
-                "task date": "2026-01-06",
-                "task category": "Review"
+                "newTask": false,
+                "completedTask": true,
+                "failedTask": false,
+                "taskTitle": "Code Review",
+                "taskDescription": "Review teammate pull requests.",
+                "taskDate": "2026-01-06",
+                "taskCategory": "Review"
             }
             ]
         },
@@ -176,50 +176,50 @@ const users = {
             taskNumbers: {
             active: 2,
             completed: 1,
-            failed: 1,
+            failed: 0,
             new: 1,
             accepted: 0
             },
             tasks: [
             {
                 active: true,
-                "new task": true,
-                "completed task": false,
-                "failed task": false,
-                "task title": "Analytics Charts",
-                "task description": "Add dashboard charts.",
-                "task date": "2026-01-14",
-                "task category": "Analytics"
+                "newTask": true,
+                "completedTask": false,
+                "failedTask": false,
+                "taskTitle": "Analytics Charts",
+                "taskDescription": "Add dashboard charts.",
+                "taskDate": "2026-01-14",
+                "taskCategory": "Analytics"
             },
             {
                 active: false,
-                "new task": false,
-                "completed task": true,
-                "failed task": false,
-                "task title": "Optimize Queries",
-                "task description": "Improve database query performance.",
-                "task date": "2026-01-08",
-                "task category": "Database"
+                "newTask": false,
+                "completedTask": true,
+                "failedTask": false,
+                "taskTitle": "Optimize Queries",
+                "taskDescription": "Improve database query performance.",
+                "taskDate": "2026-01-08",
+                "taskCategory": "Database"
             },
             {
                 active: false,
-                "new task": false,
-                "completed task": false,
-                "failed task": true,
-                "task title": "Migration Script",
-                "task description": "Fix migration errors on staging.",
-                "task date": "2026-01-02",
-                "task category": "Migration"
+                "newTask": false,
+                "completedTask": false,
+                "failedTask": true,
+                "taskTitle": "Migration Script",
+                "taskDescription": "Fix migration errors on staging.",
+                "taskDate": "2026-01-02",
+                "taskCategory": "Migration"
             },
             {
                 active: true,
-                "new task": false,
-                "completed task": false,
-                "failed task": false,
-                "task title": "Logs System",
-                "task description": "Implement logging mechanism for actions.",
-                "task date": "2026-01-15",
-                "task category": "System"
+                "newTask": false,
+                "completedTask": false,
+                "failedTask": false,
+                "taskTitle": "Logs System",
+                "taskDescription": "Implement logging mechanism for actions.",
+                "taskDate": "2026-01-15",
+                "taskCategory": "System"
             }
             ]
         },
@@ -232,70 +232,70 @@ const users = {
             taskNumbers: {
             active: 3,
             completed: 2,
-            failed: 1,
+            failed: 0,
             new: 1,
             accepted: 0
             },
             tasks: [
             {
                 active: true,
-                "new task": true,
-                "completed task": false,
-                "failed task": false,
-                "task title": "Admin Dashboard",
-                "task description": "Create admin dashboard layout.",
-                "task date": "2026-01-16",
-                "task category": "Admin"
+                "newTask": true,
+                "completedTask": false,
+                "failedTask": false,
+                "taskTitle": "Admin Dashboard",
+                "taskDescription": "Create admin dashboard layout.",
+                "taskDate": "2026-01-16",
+                "taskCategory": "Admin"
             },
             {
                 active: false,
-                "new task": false,
-                "completed task": true,
-                "failed task": false,
-                "task title": "Navbar Fix",
-                "task description": "Fix responsive navbar issues.",
-                "task date": "2026-01-09",
-                "task category": "UI Fix"
+                "newTask": false,
+                "completedTask": true,
+                "failedTask": false,
+                "taskTitle": "Navbar Fix",
+                "taskDescription": "Fix responsive navbar issues.",
+                "taskDate": "2026-01-09",
+                "taskCategory": "UI Fix"
             },
             {
                 active: false,
-                "new task": false,
-                "completed task": false,
-                "failed task": true,
-                "task title": "Performance Audit",
-                "task description": "Analyze slow components and optimize.",
-                "task date": "2026-01-03",
-                "task category": "Performance"
+                "newTask": false,
+                "completedTask": false,
+                "failedTask": true,
+                "taskTitle": "Performance Audit",
+                "taskDescription": "Analyze slow components and optimize.",
+                "taskDate": "2026-01-03",
+                "taskCategory": "Performance"
             },
             {
                 active: true,
-                "new task": false,
-                "completed task": false,
-                "failed task": false,
-                "task title": "Role Permissions",
-                "task description": "Define role-based access for employees.",
-                "task date": "2026-01-17",
-                "task category": "Security"
+                "newTask": false,
+                "completedTask": false,
+                "failedTask": false,
+                "taskTitle": "Role Permissions",
+                "taskDescription": "Define role-based access for employees.",
+                "taskDate": "2026-01-17",
+                "taskCategory": "Security"
             },
             {
                 active: false,
-                "new task": false,
-                "completed task": true,
-                "failed task": false,
-                "task title": "UI Review",
-                "task description": "Review overall UI consistency.",
-                "task date": "2026-01-06",
-                "task category": "Review"
+                "newTask": false,
+                "completedTask": true,
+                "failedTask": false,
+                "taskTitle": "UI Review",
+                "taskDescription": "Review overall UI consistency.",
+                "taskDate": "2026-01-06",
+                "taskCategory": "Review"
             },
             {
                 active: true,
-                "new task": false,
-                "completed task": false,
-                "failed task": false,
-                "task title": "Notifications",
-                "task description": "Add email notifications feature.",
-                "task date": "2026-01-18",
-                "task category": "Feature"
+                "newTask": false,
+                "completedTask": false,
+                "failedTask": false,
+                "taskTitle": "Notifications",
+                "taskDescription": "Add email notifications feature.",
+                "taskDate": "2026-01-18",
+                "taskCategory": "Feature"
             }
             ]
         }
@@ -310,9 +310,19 @@ const users = {
 
 
 export const setLocalStorage = () => {
-    localStorage.setItem('users', JSON.stringify(users))
-}
+  const existing = localStorage.getItem("users");
+
+  if (!existing) {
+    localStorage.setItem("users", JSON.stringify(users));
+  }
+};
+
 export const getLocalStorage = () => {
-    const users = JSON.parse(localStorage.getItem('users'))
-    return users
-}
+  try {
+    const storedUsers = localStorage.getItem("users");
+    return storedUsers ? JSON.parse(storedUsers) : null;
+  } catch (error) {
+    console.error("Invalid users data in localStorage", error);
+    return null;
+  }
+};
