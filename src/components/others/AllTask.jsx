@@ -61,8 +61,8 @@ const AllTask = () => {
                 return <div key={idx} className="border-2 border-[#2D2D2D] flex px-5 py-3 rounded-md font-medium mt-5 gap-5">
                         <div className='w-1/5'><h3>{emp.name}</h3></div>
                         <div className='w-1/5 text-[#3B82F6] font-bold'><h3>{emp.taskNumbers.new}</h3></div>
-                        <div className='w-1/5 text-[#F59E0B] font-bold'><h3>{emp.taskNumbers.active}</h3></div>
-                        <div className='w-1/5 text-[#10B981] font-bold'><h3>{emp.taskNumbers.completed}</h3></div>
+                        <div className='w-1/5 text-[#10B981] font-bold'><h3>{emp.taskNumbers.active}</h3></div>
+                        <div className='w-1/5 text-[#F59E0B] font-bold'><h3>{emp.taskNumbers.completed}</h3></div>
                         <div className='w-1/5 text-[#F43F5E] font-bold'><h3>{emp.taskNumbers.failed}</h3></div>
                     </div>
             })

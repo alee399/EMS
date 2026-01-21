@@ -8,18 +8,18 @@ const TaskList = ({userData}) => {
   return (
     <div className=' py-5 w-full h-[55%] mt-10 flex gap-5 flex-nowrap justify-start overflow-x-auto scrollHide'>
         {
-          userData.tasks.map((task, idx) => {
+          userData.tasks.map((task) => {
             if(task.newTask === true){
-              return <NewTask key={idx} task={task}/>
+              return <NewTask key={task.taskTitle + task.taskDate} task={task} empID = {userData.id}/>
             }
             else if(task.completedTask === true){
-              return <CompletedTask key={idx} task={task}/>
+              return <CompletedTask key={task.taskTitle + task.taskDate} task={task}/>
             }
             else if(task.active === true){
-              return <AcceptedTask key={idx} task={task}/>
+              return <AcceptedTask key={task.taskTitle + task.taskDate} task={task}/>
             }
             else if(task.failedTask === true){
-              return <FailedTask key={idx} task={task}/>
+              return <FailedTask key={task.taskTitle + task.taskDate} task={task}/>
             }
           })
         }

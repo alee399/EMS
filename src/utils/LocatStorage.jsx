@@ -6,15 +6,14 @@ const users = {
             email: "employee1@company.com",
             password: "123",
             taskNumbers: {
-            active: 1,
+            active: 0,
             completed: 1,
-            failed: 0,
-            new: 1,
-            accepted: 0
+            failed: 1,
+            new: 1
             },
             tasks: [
             {
-                active: true,
+                active: false,
                 "newTask": true,
                 "completedTask": false,
                 "failedTask": false,
@@ -52,11 +51,10 @@ const users = {
             email: "employee2@company.com",
             password: "123",
             taskNumbers: {
-            active: 2,
+            active: 1,
             completed: 1,
             failed: 1,
-            new: 1,
-            accepted: 0
+            new: 1
             },
             tasks: [
             {
@@ -108,11 +106,10 @@ const users = {
             email: "employee3@company.com",
             password: "123",
             taskNumbers: {
-            active: 2,
+            active: 1,
             completed: 2,
-            failed: 0,
-            new: 1,
-            accepted: 0
+            failed: 1,
+            new: 1
             },
             tasks: [
             {
@@ -174,11 +171,10 @@ const users = {
             email: "employee4@company.com",
             password: "123",
             taskNumbers: {
-            active: 2,
+            active: 1,
             completed: 1,
-            failed: 0,
-            new: 1,
-            accepted: 0
+            failed: 1,
+            new: 1
             },
             tasks: [
             {
@@ -230,11 +226,10 @@ const users = {
             email: "employee5@company.com",
             password: "123",
             taskNumbers: {
-            active: 3,
+            active: 2,
             completed: 2,
-            failed: 0,
-            new: 1,
-            accepted: 0
+            failed: 1,
+            new: 1
             },
             tasks: [
             {
@@ -312,6 +307,7 @@ const users = {
 export const setLocalStorage = () => {
   const existing = localStorage.getItem("users");
 
+  // ✅ seed only ONCE
   if (!existing) {
     localStorage.setItem("users", JSON.stringify(users));
   }

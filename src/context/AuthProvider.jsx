@@ -36,6 +36,8 @@ const AuthProvider = ({ children }) => {
     setUserData(updatedData)
   }, [employees])
 
+
+
   return (
     <AuthContext.Provider value={{ userData, employees, setEmployees }}>
       {children}
